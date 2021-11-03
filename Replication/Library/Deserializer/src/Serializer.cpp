@@ -2,6 +2,8 @@
 #include "framework.h"
 #include <iostream>
 
+using namespace uqac::network;
+
 Serializer::Serializer()
 {
 	position = 0;

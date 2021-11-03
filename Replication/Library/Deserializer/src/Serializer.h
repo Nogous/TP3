@@ -2,6 +2,7 @@
 #include <vector>
 #include "Vector3.h"
 #include "Quaternion.h"
+
 namespace uqac {
 	namespace network {
 		class Serializer {

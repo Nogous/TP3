@@ -4,7 +4,7 @@
 #include "Replication.h"
 #include <Deserializer.h>
 #include <LibNetwork.h>
-#include <Player.h>
+#include "Player.h"
 
 using namespace std;
 using namespace uqac::network;
