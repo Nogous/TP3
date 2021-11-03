@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/Replication
+# Install script for directory: C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/Library/Deserializer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

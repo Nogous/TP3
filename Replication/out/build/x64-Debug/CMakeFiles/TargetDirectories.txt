@@ -1,5 +1,11 @@
-C:/Users/matth/Desktop/UQAC/TP3/Replication/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/matth/Desktop/UQAC/TP3/Replication/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/matth/Desktop/UQAC/TP3/Replication/out/build/x64-Debug/Replication/CMakeFiles/Replication.dir
-C:/Users/matth/Desktop/UQAC/TP3/Replication/out/build/x64-Debug/Replication/CMakeFiles/edit_cache.dir
-C:/Users/matth/Desktop/UQAC/TP3/Replication/out/build/x64-Debug/Replication/CMakeFiles/rebuild_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Replication/CMakeFiles/Replication.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Replication/CMakeFiles/edit_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Replication/CMakeFiles/rebuild_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Deserializer/CMakeFiles/Deserializer.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Deserializer/CMakeFiles/edit_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Deserializer/CMakeFiles/rebuild_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Socket/CMakeFiles/Socket.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Socket/CMakeFiles/edit_cache.dir
+C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Socket/CMakeFiles/rebuild_cache.dir

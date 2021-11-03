@@ -2,12 +2,13 @@
 //
 
 #include "Replication.h"
-#include "../Library/Deserializer/Deserializer.h"
+#include <Deserializer.h>
 
 using namespace std;
 
 int main()
 {
 	cout << "Hello CMake." << endl;
+
 	return 0;
 }

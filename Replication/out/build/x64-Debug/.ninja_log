@@ -1,3 +1,8 @@
 # ninja log v5
-1	603	6572474959780877	Replication/CMakeFiles/Replication.dir/Replication.cpp.obj	49e029137d86c3a9
-605	877	6572474962424018	Replication/Replication.exe	615b758c160120c6
+0	1106	6576102590575208	Library/Deserializer/CMakeFiles/Replication.dir/Replication.cpp.obj	a16cc589f4c1c027
+0	464	6576144759860041	Replication/CMakeFiles/Replication.dir/Replication.cpp.obj	b14341952341350
+5	675	6576138261122840	Library/Deserializer/CMakeFiles/Deserializer.dir/src/hello.cpp.obj	f61b2282093b124f
+621	666	6576143958759929	Library/Deserializer/Deserializer.lib	51a7eb5e152e0091
+466	649	6576144761378597	Replication/Replication.exe	73134fe40bd2a5ff
+8	532	6576143753556813	Replication/CMakeFiles/Replication.dir/Player.cpp.obj	768dce172a27d3f3
+1	619	6576143958332842	Library/Deserializer/CMakeFiles/Deserializer.dir/src/DataTransmitter.cpp.obj	99f06a3297e6dce5

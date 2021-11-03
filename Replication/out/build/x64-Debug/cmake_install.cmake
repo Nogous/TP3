@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/matth/Desktop/UQAC/TP3/Replication
+# Install script for directory: C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/matth/Desktop/UQAC/TP3/Replication/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/matth/Desktop/UQAC/TP3/Replication/out/build/x64-Debug/Replication/cmake_install.cmake")
+  include("C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Replication/cmake_install.cmake")
+  include("C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Deserializer/cmake_install.cmake")
+  include("C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/Library/Socket/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/matth/Desktop/UQAC/TP3/Replication/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Camille/Documents/UQAC/Reso/ExoResoUQAC/TP3/TP3/Replication/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

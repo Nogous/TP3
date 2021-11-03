@@ -5,5 +5,6 @@ cmake_minimum_required (VERSION 3.8)
 
 project ("Replication")
 
-# Include sub-projects.
 add_subdirectory ("Replication")
+add_subdirectory (Library/Deserializer)
+add_subdirectory (Library/Socket)
