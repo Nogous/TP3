@@ -8,13 +8,14 @@
 #include <functional>
 
 // TODO: Référencez ici les en-têtes supplémentaires nécessaires à votre programme.
+namespace uqac::network {
+	class Server
+	{
+	public:
+		Server();
+		~Server();
 
-class Server
-{
-public:
-	Server();
-	~Server();
+	private:
 
-private:
-
-};
+	};
+}

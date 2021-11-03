@@ -1,4 +1,5 @@
 #include "Player.h"
+using namespace uqac::game;
 
 void Player::Write(Serializer& serializer)
 {

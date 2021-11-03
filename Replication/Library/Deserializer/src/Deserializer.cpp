@@ -2,6 +2,7 @@
 #include "framework.h"
 #include <iostream>
 
+using namespace uqac::network;
 
 Deserializer::Deserializer()
 {
