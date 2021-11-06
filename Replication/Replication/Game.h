@@ -27,7 +27,8 @@ namespace uqac {
 			static Game* GetInstance();
 			int classCount = 0;
 			bool EntityExist(Entity entity);
-			
+			Entity GetEntity(int id);
+
 			template<typename T>
 			void Init();
 			template<typename T>

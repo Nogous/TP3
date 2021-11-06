@@ -30,3 +30,13 @@ bool Game::EntityExist(Entity entity)
 {
 	return (std::find(_entities.begin(), _entities.end(), entity) != _entities.end());
 }
+
+Entity uqac::game::Game::GetEntity(int id)
+{
+	std::vector<Entity>::iterator it = _entities.begin();
+	for (it; it != _entities.end(); it++)
+	{
+		if (it->entityID == id)
+			return *it;
+	}
+}
