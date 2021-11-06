@@ -7,10 +7,7 @@ namespace uqac {
 		class Entity
 		{
 		public:
-			Entity() {
-				entityID = ID;
-				ID++;
-			};
+			Entity();
 			~Entity() = default;
 
 			unsigned int entityID;

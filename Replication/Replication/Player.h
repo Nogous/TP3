@@ -51,6 +51,8 @@ namespace uqac {
 			int armor = 0;
 			float money = 0;
 
+			static const int classId = 1;
+
 			void Write(Serializer& serializer);
 			void Read(Deserializer& deserializer, std::vector<char> buffer);
 			int GetDataSize();

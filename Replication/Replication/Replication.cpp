@@ -3,7 +3,7 @@
 
 #include "Replication.h"
 #include <Deserializer.h>
-#include "Player.h"
+#include "Game.h"
 
 using namespace std;
 using namespace uqac::network;
@@ -96,7 +96,6 @@ int main(int argc, char* argv[])
 {
 	network = std::make_shared<uqac::network::UQACNetwork>();
 	std::thread server(Server);
-
 
 	std::unique_lock<std::mutex> lk(cv_m);
 	cv.wait(lk);

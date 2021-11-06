@@ -1,11 +1,11 @@
-#include "Player.h"
+#include "Game.h"
 
 using namespace uqac::game;
 using namespace uqac::network;
 
 void Player::Write(Serializer& serializer)
 {
-	//serializer.Write(classId);
+	serializer.Write(classId, 0 , Game::GetInstance()->classCount);
 	serializer.Write(position, MIN_POS, MAX_POS, ACCURACY_POS);
 	serializer.Write(size, MIN_SIZE, MAX_SIZE, ACCURACY_SIZE);
 	serializer.Write(life, MIN_LIFE, MAX_LIFE);
