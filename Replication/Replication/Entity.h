@@ -11,6 +11,7 @@ namespace uqac {
 			~Entity() = default;
 
 			unsigned int entityID;
+			virtual void Read(Deserializer* deserializer, std::vector<char> buffer) {}
 		};
 		
 	}

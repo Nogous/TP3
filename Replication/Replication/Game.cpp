@@ -26,9 +26,15 @@ void Game::AddClassId(T type)
 	}
 }
 
-bool Game::EntityExist(Entity entity)
+bool Game::EntityExist(int id)
 {
-	return (std::find(_entities.begin(), _entities.end(), entity) != _entities.end());
+	std::vector<Entity>::iterator it = _entities.begin();
+	for (it; it != _entities.end(); it++)
+	{
+		if (it->entityID == id)
+			return true;
+	}
+	return false;
 }
 
 Entity uqac::game::Game::GetEntity(int id)

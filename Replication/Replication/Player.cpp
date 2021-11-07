@@ -6,6 +6,7 @@ using namespace uqac::network;
 void Player::Write(Serializer& serializer)
 {
 	serializer.Write(classId, 0 , Game::GetInstance()->classCount);
+	serializer.Write(entityID, 0 , Game::MAX_ENTITY_COUNT);
 	serializer.Write(position, MIN_POS, MAX_POS, ACCURACY_POS);
 	serializer.Write(size, MIN_SIZE, MAX_SIZE, ACCURACY_SIZE);
 	serializer.Write(life, MIN_LIFE, MAX_LIFE);
@@ -14,13 +15,13 @@ void Player::Write(Serializer& serializer)
 	//serializer.Write(rotation);
 }
 
-void Player::Read(Deserializer& deserializer, std::vector<char> buffer)
+void Player::Read(Deserializer* deserializer, std::vector<char> buffer)
 {
-	position = deserializer.ReadVector3(buffer, MIN_POS, MAX_POS, ACCURACY_POS);
-	size = deserializer.ReadVector3(buffer, MIN_SIZE, MAX_SIZE, ACCURACY_SIZE);
-	life = deserializer.ReadInt(buffer, MIN_LIFE, MAX_LIFE);
-	armor = deserializer.ReadInt(buffer, MIN_ARMOR, MAX_ARMOR);
-	money = deserializer.ReadFloat(buffer, MIN_MONEY, MAX_MONEY, ACCURACY_MONEY);
+	position = deserializer->ReadVector3(buffer, MIN_POS, MAX_POS, ACCURACY_POS);
+	size = deserializer->ReadVector3(buffer, MIN_SIZE, MAX_SIZE, ACCURACY_SIZE);
+	life = deserializer->ReadInt(buffer, MIN_LIFE, MAX_LIFE);
+	armor = deserializer->ReadInt(buffer, MIN_ARMOR, MAX_ARMOR);
+	money = deserializer->ReadFloat(buffer, MIN_MONEY, MAX_MONEY, ACCURACY_MONEY);
 	//rotation = deserializer.ReadQuat(buffer);
 }
 

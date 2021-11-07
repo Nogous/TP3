@@ -54,9 +54,10 @@ namespace uqac {
 			static const int classId = 1;
 
 			void Write(Serializer& serializer);
-			void Read(Deserializer& deserializer, std::vector<char> buffer);
+			void Read(Deserializer* deserializer, std::vector<char> buffer) override;
 			int GetDataSize();
 			void PrintPlayerData();
+			void SetID(int newID) { entityID = newID; }
 		};
 	}
 }

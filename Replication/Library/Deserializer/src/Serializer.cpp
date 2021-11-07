@@ -16,6 +16,21 @@ Serializer::Serializer(int size)
 	position = 0;
 }
 
+template <typename T>
+void Serializer::SerializeData(T data)
+{
+	int dataSize = sizeof(data);
+	if (buffer.size() + dataSize > buffer.capacity())
+	{
+		ResizeBuffer();
+		SerializeData(data);
+	}
+	else
+	{
+		data.Write(buffer);
+	}
+}
+
 void Serializer::ResizeBuffer(size_t size)
 {
 	std::cout << "Resizing Buffer" << std::endl;
@@ -117,7 +132,7 @@ void Serializer::Write(Quaternion data)
 			element = data.w;
 			break;
 		}
-		float abs = (element <0)? -element : element;
+		float abs = (element < 0) ? -element : element;
 		if (abs > maxValue)
 		{
 			sign = (element < 0) ? -1 : 1;
