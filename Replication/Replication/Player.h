@@ -2,14 +2,14 @@
 #include <Deserializer.h>
 #include <Vector3.h>
 #include <Quaternion.h>
-#include "Entity.h"
+#include "NetworkObject.h"
 #include <string>
 using namespace uqac::network;
 
 
 namespace uqac {
 	namespace game {
-		class Player : Entity {
+		class Player : NetworkObject {
 
 		private:
 
@@ -47,13 +47,13 @@ namespace uqac {
 			Vector3 position = Vector3();
 			Quaternion rotation = Quaternion();
 			Vector3 size = Vector3::one();
-			int life;
+			int life = 0;
 			int armor = 0;
 			float money = 0;
 
 			static const int classId = 1;
 
-			void Write(Serializer& serializer);
+			void Write(Serializer& serializer) override;
 			void Read(Deserializer* deserializer, std::vector<char> buffer) override;
 			int GetDataSize();
 			void PrintPlayerData();

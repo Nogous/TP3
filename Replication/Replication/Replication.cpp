@@ -104,6 +104,16 @@ int main(int argc, char* argv[])
 	std::thread client2(Client, 2);
 	std::thread update(Update);
 
+	Player p1 = Player(10,1,Vector3(10,10,10),Quaternion());
+	Player p2 = Player();
+	Serializer serializer = Serializer();
+	serializer.SerializeData(p1);
+	/*Deserializer deserializer = Deserializer();
+	deserializer.ReadData(serializer.GetBuffer());*/
+
+	p1.PrintPlayerData();
+	p2.PrintPlayerData();
+
 	while (countMsgReceive < 2)
 	{
 

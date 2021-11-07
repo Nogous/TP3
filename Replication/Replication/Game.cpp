@@ -28,7 +28,7 @@ void Game::AddClassId(T type)
 
 bool Game::EntityExist(int id)
 {
-	std::vector<Entity>::iterator it = _entities.begin();
+	std::vector<NetworkObject>::iterator it = _entities.begin();
 	for (it; it != _entities.end(); it++)
 	{
 		if (it->entityID == id)
@@ -37,9 +37,9 @@ bool Game::EntityExist(int id)
 	return false;
 }
 
-Entity uqac::game::Game::GetEntity(int id)
+NetworkObject uqac::game::Game::GetEntity(int id)
 {
-	std::vector<Entity>::iterator it = _entities.begin();
+	std::vector<NetworkObject>::iterator it = _entities.begin();
 	for (it; it != _entities.end(); it++)
 	{
 		if (it->entityID == id)

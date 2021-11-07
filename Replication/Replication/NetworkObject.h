@@ -1,20 +1,21 @@
 #include <Deserializer.h>
-using namespace uqac::network;
+#include <Serializer.h>
 
 namespace uqac {
 
-	namespace game {
+	namespace network {
 
 		static unsigned int ID = 0;
 
-		class Entity
+		class NetworkObject
 		{
 		public:
-			Entity();
-			~Entity() = default;
+			NetworkObject();
+			~NetworkObject() = default;
 
 			unsigned int entityID;
 			virtual void Read(Deserializer* deserializer, std::vector<char> buffer) {}
+			virtual void Write(Serializer& serializer) {}
 		};
 		
 	}

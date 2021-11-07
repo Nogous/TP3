@@ -1,7 +1,8 @@
 #include "Game.h"
 
 using namespace uqac::game;
-Entity::Entity()
+
+NetworkObject::NetworkObject()
 {
 	entityID = ID;
 	ID++;

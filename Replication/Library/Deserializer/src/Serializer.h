@@ -15,7 +15,7 @@ namespace uqac {
 			Serializer(int size);
 			void ResizeBuffer(size_t size);
 
-			template <typename T>
+			template <class T>
 			void SerializeData(T data);
 			
 

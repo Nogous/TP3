@@ -1,8 +1,10 @@
 #include "Serializer.h"
 #include "framework.h"
 #include <iostream>
+#include "../../../Replication/Player.h"
 
 using namespace uqac::network;
+using namespace uqac::game;
 
 Serializer::Serializer()
 {
@@ -16,7 +18,7 @@ Serializer::Serializer(int size)
 	position = 0;
 }
 
-template <typename T>
+template <class T>
 void Serializer::SerializeData(T data)
 {
 	int dataSize = sizeof(data);
@@ -27,7 +29,7 @@ void Serializer::SerializeData(T data)
 	}
 	else
 	{
-		data.Write(buffer);
+		data.Write(*this);
 	}
 }
 
