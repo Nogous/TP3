@@ -1,3 +1,6 @@
+#include <Deserializer.h>
+using namespace uqac::network;
+
 namespace uqac {
 
 	namespace game {
