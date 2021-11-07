@@ -30,7 +30,6 @@ void Deserializer::ReadData(std::vector<char> buffer)
 		{
 			Player p;
 			p.Read(this, buffer);
-			p.SetID(entityId);
 		}
 	}
 }

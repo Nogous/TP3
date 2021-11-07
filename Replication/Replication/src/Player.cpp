@@ -1,12 +1,12 @@
 #include "../include/Game.h"
+#include "../include/ClassRegistry.h"
 
 using namespace uqac::game;
 using namespace uqac::network;
 
 void Player::Write(Serializer& serializer)
 {
-	serializer.Write(classId, 0 , Game::GetInstance()->classCount);
-	serializer.Write(entityID, 0 , Game::MAX_ENTITY_COUNT);
+	serializer.Write(mClassId, 0 , ClassRegistry::GetInstance()->GetRegistrySize());
 	serializer.Write(position, MIN_POS, MAX_POS, ACCURACY_POS);
 	serializer.Write(size, MIN_SIZE, MAX_SIZE, ACCURACY_SIZE);
 	serializer.Write(life, MIN_LIFE, MAX_LIFE);

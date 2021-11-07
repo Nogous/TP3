@@ -31,12 +31,12 @@ namespace uqac {
 			Quaternion rotation = Quaternion();
 			int life;
 
+			int mClassId = ENEMY;
 
 			void Write(Serializer& serializer) override;
 			void Read(Deserializer* deserializer, std::vector<char> buffer) override;
 			int GetDataSize();
 			void PrintEnemyData();
-			void SetID(int newID) { entityID = newID; }
 		};
 	}
 }

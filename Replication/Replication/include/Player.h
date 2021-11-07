@@ -44,6 +44,8 @@ namespace uqac {
 			Player() = default;
 			~Player() = default;
 
+			int mClassId = PLAYER;
+
 			Vector3 position = Vector3();
 			Quaternion rotation = Quaternion();
 			Vector3 size = Vector3::one();
@@ -51,13 +53,10 @@ namespace uqac {
 			int armor = 0;
 			float money = 0;
 
-			static const int classId = 1;
-
 			void Write(Serializer& serializer) override;
 			void Read(Deserializer* deserializer, std::vector<char> buffer) override;
 			int GetDataSize();
 			void PrintPlayerData();
-			void SetID(int newID) { entityID = newID; }
 		};
 	}
 }

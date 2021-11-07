@@ -18,5 +18,6 @@ namespace uqac::network {
 		template<typename T>
 		void AddClassToRegistry(T t);
 		NetworkObject* CreateObject(int classID);
+		int GetRegistrySize();
 	};
 }
