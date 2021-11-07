@@ -1,10 +1,8 @@
 #include "Serializer.h"
 #include "framework.h"
 #include <iostream>
-#include "../../../Replication/include/Player.h"
 
 using namespace uqac::network;
-using namespace uqac::game;
 
 Serializer::Serializer()
 {
