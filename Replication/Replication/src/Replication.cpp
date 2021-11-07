@@ -1,9 +1,9 @@
 ﻿// Replication.cpp : Defines the entry point for the application.
 //
 
-#include "Replication.h"
+#include "../include/Replication.h"
 #include <Deserializer.h>
-#include "Game.h"
+#include "../include/Game.h"
 
 using namespace std;
 using namespace uqac::network;
@@ -107,7 +107,6 @@ int main(int argc, char* argv[])
 	Player p1 = Player(10,1,Vector3(10,10,10),Quaternion());
 	Player p2 = Player();
 	Serializer serializer = Serializer();
-	serializer.SerializeData(p1);
 	/*Deserializer deserializer = Deserializer();
 	deserializer.ReadData(serializer.GetBuffer());*/
 

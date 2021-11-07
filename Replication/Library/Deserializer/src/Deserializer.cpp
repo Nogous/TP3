@@ -1,7 +1,7 @@
 #include "Deserializer.h"
 #include "framework.h"
 // A CHANGER
-#include "../../../Replication/Game.h"
+#include "../../../Replication/include/Game.h"
 #include <iostream>
 
 using namespace uqac::network;
