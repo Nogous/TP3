@@ -18,20 +18,7 @@ Serializer::Serializer(int size)
 	position = 0;
 }
 
-template <class T>
-void Serializer::SerializeData(T data)
-{
-	int dataSize = sizeof(data);
-	if (buffer.size() + dataSize > buffer.capacity())
-	{
-		ResizeBuffer();
-		SerializeData(data);
-	}
-	else
-	{
-		data.Write(*this);
-	}
-}
+
 
 void Serializer::ResizeBuffer(size_t size)
 {
