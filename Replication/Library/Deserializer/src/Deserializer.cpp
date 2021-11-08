@@ -1,11 +1,8 @@
 #include "Deserializer.h"
 #include "framework.h"
-// A CHANGER
-#include "../../../Replication/include/Game.h"
 #include <iostream>
 
 using namespace uqac::network;
-using namespace uqac::game;
 
 Deserializer::Deserializer()
 {
@@ -14,24 +11,6 @@ Deserializer::Deserializer()
 
 Deserializer::~Deserializer()
 {
-}
-
-void Deserializer::ReadData(std::vector<char> buffer)
-{
-	int classId = ReadInt(buffer, 0, Game::GetInstance()->classCount);
-	int entityId = ReadInt(buffer, 0, Game::MAX_ENTITY_COUNT);
-	if (Game::GetInstance()->EntityExist(entityId))
-	{
-		Game::GetInstance()->GetEntity(entityId).Read(this,buffer);
-	}
-	else
-	{
-		if (Game::GetInstance()->classIds[classId].type() == typeid(Player))
-		{
-			Player p;
-			p.Read(this, buffer);
-		}
-	}
 }
 
 int Deserializer::ReadInt(std::vector<char> buffer, int min, int max)

@@ -1,4 +1,4 @@
-#include "../include/Game.h"
+#include "../include/Enemy.h"
 
 using namespace uqac::game;
 using namespace uqac::network;

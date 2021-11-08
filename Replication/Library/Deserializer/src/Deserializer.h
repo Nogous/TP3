@@ -13,8 +13,6 @@ namespace uqac {
 			Deserializer();
 			~Deserializer();
 
-			void ReadData(std::vector<char> buffer);
-
 			int ReadInt(std::vector<char> buffer, int min, int max);
 
 			float ReadFloat(std::vector<char> buffer, float min, float max, int accuracy);

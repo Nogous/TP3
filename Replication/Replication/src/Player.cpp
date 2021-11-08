@@ -1,5 +1,4 @@
-#include "../include/Game.h"
-#include "../include/ClassRegistry.h"
+#include "../include/Player.h"
 
 using namespace uqac::game;
 using namespace uqac::network;

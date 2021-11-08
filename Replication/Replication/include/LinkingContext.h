@@ -1,7 +1,10 @@
 #pragma once
 #include <map>
 #include <optional>
+#ifndef  NETWORKOBJ_H
+#define  NETWORKOBJ_H
 #include "NetworkObject.h"
+#endif
 #include <memory>
 
 namespace uqac::network
@@ -21,12 +24,5 @@ namespace uqac::network
 
 		std::optional<int> GetID(NetworkObject* obj);
 		std::optional<NetworkObject*> GetObject(int id);
-
-		static inline std::unique_ptr<LinkingContext> _singleton = nullptr;
-
-		static LinkingContext* GetInstance();
-
-	private:
-
 	};
 }

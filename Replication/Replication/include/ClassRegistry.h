@@ -1,8 +1,11 @@
 #include <memory>
 #include <functional>
 #include <map>
-#include "NetworkObject.h"
 
+#ifndef  NETWORKOBJ_H
+#define  NETWORKOBJ_H
+#include "NetworkObject.h"
+#endif
 namespace uqac::network {
 	
 	class ClassRegistry {
