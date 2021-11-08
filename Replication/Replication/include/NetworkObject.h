@@ -13,6 +13,8 @@ namespace uqac::network {
 			ENEMY
 		};
 
+		int mClassId;
+
 		NetworkObject();
 		~NetworkObject() = default;
 

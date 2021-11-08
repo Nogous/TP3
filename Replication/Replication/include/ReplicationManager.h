@@ -1,5 +1,7 @@
 #include <unordered_set>
 #include "LinkingContext.h"
+#include <Serializer.h>
+#include <Deserializer.h>
 
 namespace uqac::network {
 	
@@ -11,6 +13,7 @@ namespace uqac::network {
 		LinkingContext lnkContext;
 
 		void CreateObject(int classId);
-		void Update();
+		void Update(Serializer& s);
+		void Update(Deserializer& s, std::vector<char> buffer);
 	};
 }
