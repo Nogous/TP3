@@ -35,3 +35,11 @@ std::optional<NetworkObject*> LinkingContext::GetObject(int id)
 		return NetworkObjectsID[id];
 	return {};
 }
+
+LinkingContext* LinkingContext::GetInstance()
+{
+	if (_singleton == nullptr)
+		_singleton = std::make_unique<LinkingContext>();
+
+	return _singleton.get();
+}

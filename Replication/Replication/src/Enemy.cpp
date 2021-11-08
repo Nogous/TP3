@@ -5,18 +5,16 @@ using namespace uqac::network;
 
 void Enemy::Write(Serializer& serializer)
 {
-	//serializer.Write(classId, 0, Game::GetInstance()->classCount);
-	serializer.Write(entityID, 0, Game::MAX_ENTITY_COUNT);
 	serializer.Write(position, MIN_POS, MAX_POS, ACCURACY_POS);
 	serializer.Write(life, MIN_LIFE, MAX_LIFE);
-	//serializer.Write(rotation);
+	serializer.Write(rotation);
 }
 
-void Enemy::Read(Deserializer* deserializer, std::vector<char> buffer)
+void Enemy::Read(Deserializer& deserializer, std::vector<char> buffer)
 {
-	position = deserializer->ReadVector3(buffer, MIN_POS, MAX_POS, ACCURACY_POS);
-	life = deserializer->ReadInt(buffer, MIN_LIFE, MAX_LIFE);
-	//rotation = deserializer.ReadQuat(buffer);
+	position = deserializer.ReadVector3(buffer, MIN_POS, MAX_POS, ACCURACY_POS);
+	life = deserializer.ReadInt(buffer, MIN_LIFE, MAX_LIFE);
+	rotation = deserializer.ReadQuat(buffer);
 }
 
 int Enemy::GetDataSize()

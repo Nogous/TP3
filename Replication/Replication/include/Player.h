@@ -54,7 +54,7 @@ namespace uqac {
 			float money = 0;
 
 			void Write(Serializer& serializer) override;
-			void Read(Deserializer* deserializer, std::vector<char> buffer) override;
+			void Read(Deserializer& deserializer, std::vector<char> buffer) override;
 			int GetDataSize();
 			void PrintPlayerData();
 		};

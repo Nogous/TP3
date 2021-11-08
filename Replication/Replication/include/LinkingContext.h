@@ -2,6 +2,7 @@
 #include <map>
 #include <optional>
 #include "NetworkObject.h"
+#include <memory>
 
 namespace uqac::network
 {
@@ -20,6 +21,10 @@ namespace uqac::network
 
 		std::optional<int> GetID(NetworkObject* obj);
 		std::optional<NetworkObject*> GetObject(int id);
+
+		static inline std::unique_ptr<LinkingContext> _singleton = nullptr;
+
+		static LinkingContext* GetInstance();
 
 	private:
 

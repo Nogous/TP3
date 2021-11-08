@@ -16,7 +16,7 @@ namespace uqac::network {
 		NetworkObject();
 		~NetworkObject() = default;
 
-		virtual void Read(Deserializer* deserializer, std::vector<char> buffer) {}
+		virtual void Read(Deserializer& deserializer, std::vector<char> buffer) {}
 		virtual void Write(Serializer& serializer) {}
 	};
 }

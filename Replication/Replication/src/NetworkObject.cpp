@@ -1,8 +1,8 @@
-#include "../include/Game.h"
+#include "../include/LinkingContext.h"
 
-using namespace uqac::game;
+using namespace uqac::network;
 
 NetworkObject::NetworkObject()
 {
-
+	LinkingContext::GetInstance()->AddNetworkObject(this);
 }
