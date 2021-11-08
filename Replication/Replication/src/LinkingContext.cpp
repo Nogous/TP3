@@ -6,6 +6,7 @@ void LinkingContext::AddNetworkObject(int id, NetworkObject* obj)
 {
 	NetworkObjectsID.insert(std::pair<int, NetworkObject*>(id, obj));
 	NetworkObjects.insert(std::pair<NetworkObject*, int>(obj, id));
+	networkId = id + 1;
 }
 
 void LinkingContext::RemoveNetworkObject(NetworkObject* obj)

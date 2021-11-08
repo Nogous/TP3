@@ -13,6 +13,7 @@ namespace uqac::network {
 		LinkingContext lnkContext;
 
 		void CreateObject(int classId);
+		void CreateObject(int classId, int objectId);
 		void Update(Serializer& s);
 		void Update(Deserializer& s, std::vector<char> buffer);
 	};
